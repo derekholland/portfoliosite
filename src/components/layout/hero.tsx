@@ -12,7 +12,7 @@ export default function Hero() {
 			</h2>
 
 			<p className='max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl text-muted-foreground text-sm sm:text-base md:text-lg'>
-				I don't just build websites — I build solutions that last.
+				I don\'t just build websites — I build solutions that last.
 			</p>
 
 			<a

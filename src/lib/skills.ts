@@ -11,8 +11,7 @@ import {
 	SiVercel,
 	SiShadcnui,
 	SiZod,
-	SiNodedotjs,
-	SiAib,
+	SiNodedotjs
 } from 'react-icons/si';
 
 export type Skill = {
@@ -32,5 +31,5 @@ export const skills: Skill[] = [
 	{ name: 'zod', icon: SiZod },
 	{ name: 'shadcn/ui', icon: SiShadcnui },
 	{ name: 'Vercel', icon: SiVercel },
-	{ name: 'GitHub', icon: SiGithub },
+	{ name: 'GitHub', icon: SiGithub }
 ];
