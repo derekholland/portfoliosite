@@ -1,7 +1,8 @@
 import { ThemeProvider as BaseThemeProvider } from 'next-themes';
+import { ReactNode } from 'react';
 
 type ThemeProviderProps = {
-	children: React.ReactNode;
+	children: ReactNode;
 };
 
 export default function ThemeProvider({ children }: ThemeProviderProps) {
