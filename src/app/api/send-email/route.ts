@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 		const { name, email, message } = await req.json();
 
 		const data = await resend.emails.send({
-			from: 'Your Name <derekhollandwebdev@gmail.com>', // must match your Resend domain
+			from: 'Derek <contact@derekholland.com>', // must match your Resend domain
 			to: 'derekhollandwebdev@gmail.com', // where you want to receive the emails
 			subject: `New message from ${name}`,
 			html: `
@@ -19,6 +19,8 @@ export async function POST(req: Request) {
 				<p>${message}</p>
 			`
 		});
+		console.log('Resend Response:', data); // Log this
+		console.log('Resend API:', process.env.RESEND_API_KEY?.slice(0, 6)); // Partial for safety
 
 		return NextResponse.json({ success: true, data });
 	} catch (error) {
