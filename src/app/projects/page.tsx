@@ -16,8 +16,8 @@ const projects = [
 	},
 	{
 		title: 'Next Project Coming soon',
-		image: '/screenshots/workouts.jpg',
-		slug: '',
+		image: '/screenshots/movietrailerpage.jpg',
+		slug: 'Placeholder Project',
 		description: 'Final project will be added soon. Stay tuned!'
 	}
 	// Add more projects as needed
