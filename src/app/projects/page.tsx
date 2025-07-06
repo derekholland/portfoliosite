@@ -1,26 +1,27 @@
 import SectionWrapper from '@/components/layout/section-wrapper';
 import ProjectCard from './project-card';
 
-const projects = [
+export const projects = [
 	{
-		title: 'Kingdom Warrior',
-		image: '/screenshots/workouts.jpg',
 		slug: 'kingdom-warrior',
-		description: 'A faith-based fitness tracker using Next.js and Supabase.'
+		title: 'Kingdom Warrior',
+		description:
+			'A faith-based fitness tracker for logging workouts, daily bible verses and more.',
+		image: '/screenshots/workouts.jpg'
 	},
 	{
-		title: 'Movie Buff',
-		image: '/screenshots/movietrailerpage.jpg',
 		slug: 'movie-trailer',
-		description: 'Search and watch movie trailers using TMDB API.'
+		title: 'Movie Buff',
+		description: 'Search and watch movie trailers using TMDB API.',
+		image: '/screenshots/movietrailerpage.jpg'
 	},
 	{
-		title: 'Next Project Coming soon',
-		image: '/screenshots/movietrailerpage.jpg',
-		slug: 'Placeholder Project',
-		description: 'Final project will be added soon. Stay tuned!'
+		slug: 'daily-history-facts-app',
+		title: 'Daily History Facts App',
+		description:
+			'Explore daily historical facts and events that took place on the current day.',
+		image: '/screenshots/history-app.jpg'
 	}
-	// Add more projects as needed
 ];
 
 export default function ProjectsPage() {

@@ -10,7 +10,7 @@ const projects = [
 		title: 'Kingdom Warrior',
 		description: 'A faith-based fitness tracker using Next.js and Supabase.',
 		image: '/screenshots/homepage.jpg',
-		github: 'https://github.com/yourname/kingdom-warrior',
+		github: 'https://github.com/derekholland/fitnessApp',
 		live: 'https://kingdomwarrior.app'
 	},
 	{
@@ -18,8 +18,17 @@ const projects = [
 		title: 'Movie Trailer App',
 		description: 'Search and watch movie trailers using TMDB API.',
 		image: '/screenshots/moviebuffhome.jpg',
-		github: 'https://github.com/yourname/movie-trailer-app',
+		github: 'https://github.com/derekholland/React-Movie-App',
 		live: 'https://react-movie-app21.netlify.app'
+	},
+	{
+		slug: 'daily-history-facts-app',
+		title: 'Daily History Facts App',
+		description:
+			'Explore daily historical facts and events that took place on the current day.',
+		image: '/screenshots/history-app.jpg',
+		github: 'https://github.com/derekholland/daily-history-app',
+		live: 'https://daily-history-app.vercel.app/'
 	}
 ];
 
