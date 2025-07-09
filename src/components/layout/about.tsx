@@ -7,7 +7,7 @@ export default function About() {
 		<SectionWrapper id='about'>
 			<h2 className='text-3xl sm:text-4xl font-bold'>About Me</h2>
 
-			<p className='max-w-md sm:max-w-2xl text-muted-foreground text-base sm:text-lg'>
+			<p className='max-w-md sm:max-w-2xl mx-auto text-muted-foreground text-base sm:text-lg text-left'>
 				{bio}
 			</p>
 		</SectionWrapper>
