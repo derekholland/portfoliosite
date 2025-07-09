@@ -6,7 +6,7 @@ export const projects = [
 		slug: 'kingdom-warrior',
 		title: 'Kingdom Warrior',
 		description:
-			'A faith-based fitness tracker for logging workouts, daily bible verses and more.',
+			'A faith-based fitness tracker for logging workouts, creating custom workouts, saving daily bible verses and more.',
 		image: '/screenshots/workouts.jpg'
 	},
 	{

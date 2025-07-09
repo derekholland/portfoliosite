@@ -10,7 +10,7 @@ export default function Hero() {
 			</h1>
 
 			<h2 className='text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground'>
-				Fullstack Developer | Creative Problem Solver
+				Fullstack Developer | Frontend-Focused | Creative Problem Solver
 			</h2>
 
 			<p className='max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl text-muted-foreground text-sm sm:text-base md:text-lg'>

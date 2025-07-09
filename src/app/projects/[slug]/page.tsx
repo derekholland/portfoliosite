@@ -8,24 +8,24 @@ const projects = [
 	{
 		slug: 'kingdom-warrior',
 		title: 'Kingdom Warrior',
-		description: 'A faith-based fitness tracker using Next.js and Supabase.',
+		description: `Kingdom Warrior is a full-stack fitness app built with Next.js 15, Supabase, Tailwind CSS, Prisma, and TypeScript. It allows users to log custom workouts or follow a pre-designed 3-day workout template with progressive overload logic. The app includes dynamic warm-up calculations, real-time set tracking, and a exercise-specific weight progression system. Advanced features include Supabase Auth for secure user accounts and data persistence.This project showcases CRUD operations, conditional rendering, route-based data fetching, and form validation with Zod — all within a sleek, responsive modern UI using Shadcn and Radix UI.`,
+
 		image: '/screenshots/homepage.jpg',
 		github: 'https://github.com/derekholland/fitnessApp',
 		live: 'https://kingdomwarrior.app'
 	},
 	{
 		slug: 'movie-trailer',
-		title: 'Movie Trailer App',
-		description: 'Search and watch movie trailers using TMDB API.',
+		title: 'Movie Buff',
+		description: `Movie Buff is a front-end movie trailer search app that leverages the TMDB API to provide live search results and video previews. Built with React and Tailwind CSS inside a Next.js 14 framework, the app offers a smooth user experience with minimal loading times and dynamic content rendering. Each movie page includes trailer embeds, genre info, and metadata pulled from the API. The project demonstrates client-side routing, controlled inputs for live search, and effective API integration with error handling.`,
 		image: '/screenshots/moviebuffhome.jpg',
 		github: 'https://github.com/derekholland/React-Movie-App',
 		live: 'https://react-movie-app21.netlify.app'
 	},
 	{
 		slug: 'daily-history-facts-app',
-		title: 'Daily History Facts App',
-		description:
-			'Explore daily historical facts and events that took place on the current day.',
+		title: 'This Day in History',
+		description: `This Day In History is a Next.js 15 app that fetches historical events for the current day using an external API. Users can browse, paginate, and favorite events from history, with optional thumbnails for visual context. The app is styled with Tailwind CSS and features dark/light mode support via next-themes. State management is handled client-side, with persistent favorites stored in localStorage. This project showcases API integration, responsive design, dynamic routing, and real-time UI updates.`,
 		image: '/screenshots/history-app.jpg',
 		github: 'https://github.com/derekholland/daily-history-app',
 		live: 'https://daily-history-app.vercel.app/'
@@ -52,7 +52,7 @@ export default function ProjectDetail({
 					className='object-cover rounded-md'
 				/>
 			</div>
-			<p className='mb-6 text-lg'>{project.description}</p>
+			<p className='mb-6 text-lg mt-5'>{project.description}</p>
 			<div className='flex gap-4'>
 				<Link
 					href={project.github}
@@ -62,7 +62,7 @@ export default function ProjectDetail({
 				</Link>
 				<Link
 					href={project.live}
-					className='bg-primary text-white px-4 py-2 rounded hover:bg-primary/90'
+					className='bg-muted px-4 py-2 rounded hover:bg-muted/80'
 					target='_blank'>
 					Live App
 				</Link>
