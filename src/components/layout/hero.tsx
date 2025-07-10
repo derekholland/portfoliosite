@@ -1,6 +1,8 @@
+import { GithubIcon, LinkedinIcon } from 'lucide-react';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 import SectionWrapper from './section-wrapper';
 
-const bio = `I don't just build websites — I build solutions that last.`;
+const bio = `I don't just build websites — I craft seamless web experiences.`;
 
 export default function Hero() {
 	return (
@@ -22,6 +24,27 @@ export default function Hero() {
 				className='mt-6 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
 				View My Work
 			</a>
+
+			{/* Social Icons */}
+			<div className='mt-6 flex gap-4 justify-center'>
+				<a
+					href='https://github.com/derekholland'
+					target='_blank'
+					rel='noopener noreferrer'
+					aria-label='GitHub'
+					className='text-muted-foreground hover:text-foreground transition'>
+					<SiGithub className='w-6 h-6' />
+				</a>
+
+				<a
+					href='https://www.linkedin.com/in/derek-holland-93ab0617b/'
+					target='_blank'
+					rel='noopener noreferrer'
+					aria-label='LinkedIn'
+					className='text-muted-foreground hover:text-foreground transition'>
+					<SiLinkedin className='w-6 h-6' />
+				</a>
+			</div>
 		</SectionWrapper>
 	);
 }

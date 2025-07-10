@@ -26,12 +26,10 @@ export default function Sidebar() {
 							{link.name}
 						</Link>
 					))}
+					<div>
+						<ThemeSwitcher />
+					</div>
 				</nav>
-			</div>
-
-			{/* Bottom Section: Theme Switcher */}
-			<div className='mt-6'>
-				<ThemeSwitcher />
 			</div>
 		</aside>
 	);
