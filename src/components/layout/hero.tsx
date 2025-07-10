@@ -1,4 +1,3 @@
-import { GithubIcon, LinkedinIcon } from 'lucide-react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import SectionWrapper from './section-wrapper';
 

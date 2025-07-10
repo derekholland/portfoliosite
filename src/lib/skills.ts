@@ -1,4 +1,3 @@
-// src/data/skills.ts
 import {
 	SiNextdotjs,
 	SiReact,
