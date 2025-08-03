@@ -11,7 +11,7 @@ export default function About() {
 		<SectionWrapper id='about'>
 			<h2 className='text-3xl sm:text-4xl font-bold'>About Me</h2>
 
-			<div className='max-w-md sm:max-w-2xl mx-auto text-muted-foreground text-base sm:text-lg text-left space-y-4'>
+			<div className='max-w-md sm:max-w-2xl mx-auto text-muted-foreground text-base sm:text-lg  text-left space-y-4'>
 				{bioParagraphs.map((paragraph, index) => (
 					<p key={index}>{paragraph}</p>
 				))}
