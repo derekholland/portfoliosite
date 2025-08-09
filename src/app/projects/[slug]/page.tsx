@@ -24,8 +24,8 @@ const projects = [
 	},
 	{
 		slug: 'daily-history-facts-app',
-		title: 'This Day in History',
-		description: `This Day In History is a Next.js 15 app that fetches historical events for the current day using an external API. Users can browse, paginate, and favorite events from history, with optional thumbnails for visual context. The app is styled with Tailwind CSS and features dark/light mode support via next-themes. State management is handled client-side, with persistent favorites stored in localStorage. This project showcases API integration, responsive design, dynamic routing, and real-time UI updates.`,
+		title: 'Daily History App',
+		description: `Daily History is a Next.js 15 app that fetches historical events for the current day using an external API. Users can browse, paginate, and favorite events from history, with optional thumbnails for visual context. The app is styled with Tailwind CSS and features dark/light mode support via next-themes. State management is handled client-side, with persistent favorites stored in localStorage. This project showcases API integration, responsive design, dynamic routing, and real-time UI updates.`,
 		image: '/screenshots/history-app.jpg',
 		github: 'https://github.com/derekholland/daily-history-app',
 		live: 'https://daily-history-app.vercel.app/'

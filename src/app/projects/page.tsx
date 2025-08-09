@@ -17,7 +17,7 @@ export const projects = [
 	},
 	{
 		slug: 'daily-history-facts-app',
-		title: 'Daily History Facts App',
+		title: 'Daily History App',
 		description:
 			'Explore daily historical facts and events that took place on the current day.',
 		image: '/screenshots/history-app.jpg'

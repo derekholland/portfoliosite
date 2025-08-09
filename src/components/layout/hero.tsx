@@ -18,11 +18,20 @@ export default function Hero() {
 				{bio}
 			</p>
 
-			<a
-				href='#projects'
-				className='mt-6 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
-				View My Work
-			</a>
+			<div>
+				<a
+					href='#projects'
+					className='mt-6 mr-5 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
+					View My Work
+				</a>
+				<a
+					href='/derek_holland_resume_2025.pdf'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='mt-6 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
+					View Resume
+				</a>
+			</div>
 
 			{/* Social Icons */}
 			<div className='mt-6 flex gap-4 justify-center'>
