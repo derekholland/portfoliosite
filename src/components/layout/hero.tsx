@@ -10,25 +10,25 @@ export default function Hero() {
 				Derek Holland
 			</h1>
 
-			<h2 className='text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground'>
+			<h2 className='hidden sm:block text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground'>
 				Fullstack Developer | Frontend-Focused | Creative Problem Solver
 			</h2>
 
 			<p className='max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl text-muted-foreground text-sm sm:text-base md:text-lg'>
 				{bio}
 			</p>
-
-			<div>
+			<div className='mt-6 flex flex-col sm:flex-row sm:items-center'>
 				<a
 					href='#projects'
-					className='mt-6 mr-5 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
+					className='mb-4 sm:mb-0 sm:mr-5 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
 					View My Work
 				</a>
+
 				<a
 					href='/derek_holland_resume_2025.pdf'
 					target='_blank'
 					rel='noopener noreferrer'
-					className='mt-6 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
+					className='inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
 					View Resume
 				</a>
 			</div>
@@ -56,5 +56,3 @@ export default function Hero() {
 		</SectionWrapper>
 	);
 }
-
-// test
