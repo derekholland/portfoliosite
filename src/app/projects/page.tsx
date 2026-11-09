@@ -1,38 +1,16 @@
-import SectionWrapper from '@/components/layout/section-wrapper';
+import { projects } from '@/lib/projects';
 import ProjectCard from './project-card';
-
-export const projects = [
-	{
-		slug: 'kingdom-warrior',
-		title: 'Kingdom Warrior',
-		description:
-			'A faith-based fitness tracker for logging workouts, creating custom workouts, saving daily bible verses and more.',
-		image: '/screenshots/workouts.jpg'
-	},
-	{
-		slug: 'movie-trailer',
-		title: 'Movie Buff',
-		description: 'Search and watch movie trailers using TMDB API.',
-		image: '/screenshots/movietrailerpage.jpg'
-	},
-	{
-		slug: 'daily-history-facts-app',
-		title: 'Daily History App',
-		description:
-			'Explore daily historical facts and events that took place on the current day.',
-		image: '/screenshots/history-app.jpg'
-	}
-];
 
 export default function ProjectsPage() {
 	return (
-		<SectionWrapper id='projects'>
-			<h2 className='text-3xl md:text-4xl mt-8 font-bold'>Projects</h2>
-			<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8'>
+		<section id='projects' className='scroll-mt-16 xl:scroll-mt-0 border-b border-border py-14 sm:py-18'>
+			<p className='font-mono text-xs font-semibold uppercase tracking-widest text-portfolio-accent'>Portfolio</p>
+			<h2 className='mt-2 text-3xl font-bold tracking-tight md:text-4xl'>Selected projects</h2>
+			<div className='mt-6 grid grid-cols-1 gap-4 md:grid-cols-3'>
 				{projects.map(project => (
 					<ProjectCard key={project.slug} project={project} />
 				))}
 			</div>
-		</SectionWrapper>
+		</section>
 	);
 }

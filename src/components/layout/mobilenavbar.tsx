@@ -21,8 +21,10 @@ export default function MobileNavbar() {
 
 				{/* Hamburger Button */}
 				<button
+					type='button'
 					onClick={() => setMenuOpen(prev => !prev)}
-					className='focus:outline-none'
+					className='rounded p-1 focus-visible:outline-2 focus-visible:outline-ring'
+					aria-expanded={menuOpen}
 					aria-label='Toggle menu'>
 					{menuOpen ? <X size={24} /> : <Menu size={24} />}
 				</button>

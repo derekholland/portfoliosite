@@ -11,7 +11,7 @@ export default function Sidebar() {
 			<div className='space-y-8'>
 				{/* Logo */}
 				<div className='text-center'>
-					<h1 className='text-2xl font-bold'>Derek Holland</h1>
+					<p className='text-2xl font-bold'>Derek Holland</p>
 					<p className='text-sm text-muted-foreground'>Fullstack Developer</p>
 				</div>
 

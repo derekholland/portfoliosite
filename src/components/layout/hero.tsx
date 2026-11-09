@@ -1,58 +1,36 @@
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
-import SectionWrapper from './section-wrapper';
-
-const bio = `I don't just build websites — I craft seamless web experiences.`;
 
 export default function Hero() {
 	return (
-		<SectionWrapper id='home'>
-			<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight'>
-				Derek Holland
-			</h1>
-
-			<h2 className='hidden sm:block text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground'>
-				Fullstack Developer | Frontend-Focused | Creative Problem Solver
-			</h2>
-
-			<p className='max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl text-muted-foreground text-sm sm:text-base md:text-lg'>
-				{bio}
+		<section id='home' className='relative isolate scroll-mt-24 overflow-hidden rounded-3xl border border-border bg-card px-6 py-12 sm:px-12 sm:py-16 lg:px-16'>
+			<div aria-hidden='true' className='portfolio-grid pointer-events-none absolute inset-0 -z-10' />
+			<p className='flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-widest text-portfolio-accent'>
+				<span className='size-2 rounded-full bg-portfolio-accent' />
+				Full-stack web developer
 			</p>
-			<div className='mt-6 flex flex-col sm:flex-row sm:items-center'>
-				<a
-					href='#projects'
-					className='mb-4 sm:mb-0 sm:mr-5 inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
-					View My Work
+			<h1 className='mt-5 text-5xl font-bold tracking-[-0.065em] sm:text-7xl lg:text-8xl'>
+				Derek Holland<span className='text-portfolio-accent'>.</span>
+			</h1>
+			<p className='mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground sm:text-xl'>
+				I build web apps that make everyday things easier, from tracking a workout to finding a movie to watch.
+			</p>
+			<div className='mt-8 flex flex-wrap items-center gap-3'>
+				<a href='#projects' className='inline-flex items-center gap-2 rounded-full bg-portfolio-accent px-5 py-3 text-sm font-semibold text-portfolio-on-accent transition hover:opacity-85'>
+					View my work <ArrowDown aria-hidden='true' size={16} />
 				</a>
-
-				<a
-					href='/derek_holland_resume_2025.pdf'
-					target='_blank'
-					rel='noopener noreferrer'
-					className='inline-block rounded-md bg-primary px-6 py-3 text-background hover:bg-primary/90 transition'>
-					View Resume
-				</a>
-			</div>
-
-			{/* Social Icons */}
-			<div className='mt-6 flex gap-4 justify-center'>
-				<a
-					href='https://github.com/derekholland'
-					target='_blank'
-					rel='noopener noreferrer'
-					aria-label='GitHub'
-					className='text-muted-foreground hover:text-foreground transition'>
-					<SiGithub className='w-6 h-6' />
-				</a>
-
-				<a
-					href='https://www.linkedin.com/in/derek-holland-93ab0617b/'
-					target='_blank'
-					rel='noopener noreferrer'
-					aria-label='LinkedIn'
-					className='text-muted-foreground hover:text-foreground transition'>
-					<SiLinkedin className='w-6 h-6' />
+				<a href='/derek_holland_resume_2025.pdf' target='_blank' rel='noopener noreferrer' className='inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold transition hover:bg-muted'>
+					Résumé <ArrowUpRight aria-hidden='true' size={16} />
 				</a>
 			</div>
-		</SectionWrapper>
+			<div className='mt-9 flex flex-wrap gap-x-5 gap-y-2 border-t border-border pt-5 text-sm text-muted-foreground'>
+				<a href='https://github.com/derekholland' target='_blank' rel='noopener noreferrer' className='inline-flex items-center gap-2 transition hover:text-portfolio-accent'>
+					<SiGithub aria-hidden='true' /> GitHub
+				</a>
+				<a href='https://www.linkedin.com/in/derek-holland-93ab0617b/' target='_blank' rel='noopener noreferrer' className='inline-flex items-center gap-2 transition hover:text-portfolio-accent'>
+					<SiLinkedin aria-hidden='true' /> LinkedIn
+				</a>
+			</div>
+		</section>
 	);
 }

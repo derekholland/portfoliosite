@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Derek Holland Portfolio Site',
-	description: 'Web Developer Portfolio',
+	metadataBase: new URL('https://derekholland.com'),
+	title: { default: 'Derek Holland | Web Developer', template: '%s | Derek Holland' },
+	description: 'Explore Derek Holland’s web development projects, technical skills, and résumé.',
 	icons: {
 		icon: '/favicon.png'
 	}
@@ -37,7 +38,7 @@ export default function RootLayout({
 					<MobileNavbar />
 					<Sidebar />
 					{/* Main content area */}
-					<main className='w-full min-h-screen bg-background pt-24 px-6 lg:pl-64'>
+					<main className='w-full min-h-screen bg-background pt-24 px-6 xl:pl-[17.5rem]'>
 						<div className='mx-auto max-w-5xl'>{children}</div>
 					</main>
 				</ThemeProvider>

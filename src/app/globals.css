@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+	--color-portfolio-accent: var(--portfolio-accent);
+	--color-portfolio-on-accent: var(--portfolio-on-accent);
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--font-sans: var(--font-geist-sans);
@@ -44,6 +46,8 @@
 }
 
 :root {
+	--portfolio-accent: #0f766e;
+	--portfolio-on-accent: #ffffff;
 	--radius: 0.625rem;
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.129 0.042 264.695);
@@ -79,6 +83,8 @@
 }
 
 .dark {
+	--portfolio-accent: #5eead4;
+	--portfolio-on-accent: #082f2a;
 	--background: oklch(0.129 0.042 264.695);
 	--foreground: oklch(0.984 0.003 247.858);
 	--card: oklch(0.208 0.042 265.755);
@@ -121,6 +127,14 @@
 	}
 }
 
-html {
-	scroll-behavior: smooth;
+.portfolio-grid {
+	background-image: radial-gradient(circle, color-mix(in srgb, var(--portfolio-accent) 26%, transparent) 1px, transparent 1px);
+	background-size: 20px 20px;
+	mask-image: linear-gradient(125deg, transparent 38%, black);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
 }

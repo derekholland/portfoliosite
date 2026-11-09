@@ -4,12 +4,12 @@ import { Button } from '../ui/button';
 import { LucideMoon, LucideSun } from 'lucide-react';
 
 const ThemeSwitcher = () => {
-	const { theme, setTheme } = useTheme();
+	const { resolvedTheme, setTheme } = useTheme();
 	return (
 		<Button
 			variant='outline'
 			size='icon'
-			onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+			onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
 			<LucideSun
 				className='
           h-4 w-4 rotate-0 scale-100 transition-all
